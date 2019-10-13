@@ -1,18 +1,18 @@
 package com.ahmad.cv.fragments;
-import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+        import android.os.Bundle;
+        import androidx.annotation.Nullable;
+        import androidx.fragment.app.Fragment;
+        import androidx.recyclerview.widget.LinearLayoutManager;
+        import androidx.recyclerview.widget.RecyclerView;
 
-import com.ahmad.cv.model.DemoItem;
-import com.ahmad.cv.adapters.EducationAdapter;
-import com.ahmad.cv.base.R;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import java.util.ArrayList;
-import java.util.List;
+        import com.ahmad.cv.adapters.AchievemetsAdapter;
+        import com.ahmad.cv.model.DemoItem;
+        import com.ahmad.cv.base.R;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import java.util.ArrayList;
+        import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -36,9 +36,12 @@ public class EducationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_blank_fragment2, container, false);
-        RecyclerView recyclerViewDemo = view.findViewById(R.id.recyclerViewDemo1);
+        RecyclerView recyclerViewDemo = view.findViewById(R.id.bok_adapter);
         recyclerViewDemo.setLayoutManager(new LinearLayoutManager(getContext()));
-       recyclerViewDemo.setAdapter(new EducationAdapter(feedItems(), getContext()));
+        String string = getString(R.string.Achievement1);
+        String string1 = getString(R.string.Achievement2);
+        String[] books= {string, string1};
+        recyclerViewDemo.setAdapter(new AchievemetsAdapter(books));
         return view;
     }
     private List<DemoItem> feedItems() {

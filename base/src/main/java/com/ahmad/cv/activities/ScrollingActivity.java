@@ -102,7 +102,7 @@ public class ScrollingActivity extends AppCompatActivity {
             Intent i=new Intent(android.content.Intent.ACTION_SEND);
             i.setType("text/plain");
             i.putExtra(android.content.Intent.EXTRA_SUBJECT,"Click the following link");
-            i.putExtra(android.content.Intent.EXTRA_TEXT, "https://shahwaiz90.github.io/resume/");
+            //i.putExtra(android.content.Intent.EXTRA_TEXT, "https://github.com/shahwaiz90/shahwaiz90.github.io");
             startActivity(Intent.createChooser(i,"Share via"));
             return true;
         }

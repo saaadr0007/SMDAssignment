@@ -8,8 +8,6 @@
     android:padding="6dp"
     android:orientation="vertical"
     >
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +42,7 @@
                     android:isIndicator="true"
                     android:numStars="5"
                     android:progressTint="@color/averageColor"
-                    android:rating="5"
+                    android:rating="4"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
                     android:secondaryProgressTint="@android:color/transparent" />
@@ -107,7 +105,7 @@
                     android:isIndicator="true"
                     android:numStars="5"
                     android:progressTint="@color/averageColor"
-                    android:rating="4"
+                    android:rating="3"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
                     android:secondaryProgressTint="@android:color/transparent"
@@ -175,7 +173,7 @@
                     android:isIndicator="true"
                     android:numStars="5"
                     android:progressTint="@color/averageColor"
-                    android:rating="4"
+                    android:rating="4.5"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
                     android:secondaryProgressTint="@android:color/transparent"
@@ -291,12 +289,12 @@
                     android:id="@+id/workedOnTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/worked_on_title"
                     android:textColor="@color/blackColor"
                     android:textSize="16sp"
                     app:fontFamily="@font/roboto"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="40dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ExperienceTime"
                     card_view:ignore="MissingConstraints" />
@@ -318,16 +316,15 @@
                     android:id="@+id/WhyChooseAboveFeature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/why_i_did_choose_above_title_1"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/why_i_did_choose_above_title_0"
                     android:textColor="@color/blackColor"
                     android:textSize="16sp"
-                    android:layout_marginTop="10dp"
                     app:fontFamily="@font/roboto"
-                    android:layout_marginStart="40dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ExperienceDescription"
                     card_view:ignore="MissingConstraints" />
-
 
                 <TextView
                     android:id="@+id/ChooseAboveFeatureAnswer"
@@ -623,20 +620,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="15dp"
+            android:layout_height="329dp"
             android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
 
             android:orientation="vertical">
-
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                >
+                android:layout_marginBottom="10dp">
 
 
                 <TextView
@@ -655,11 +650,11 @@
                     android:id="@+id/projectName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/project_title"
                     android:textColor="@color/blackColor"
                     android:textSize="16sp"
-                    android:layout_marginStart="10dp"
                     app:fontFamily="@font/roboto"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView4"
@@ -680,49 +675,48 @@
                     app:layout_constraintTop_toBottomOf="@+id/projectName"
                     card_view:ignore="MissingConstraints" />
 
-                <ImageView
-                    android:id="@+id/githubCopyLink"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+<!--                <ImageView-->
+<!--                    android:id="@+id/githubCopyLink"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
 
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/openlink"
-                    app:layout_constraintBottom_toTopOf="@+id/textView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/projectName"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4"
-                    app:layout_constraintVertical_bias="0.326"
-                    card_view:ignore="MissingConstraints" />
+<!--                    android:contentDescription="@string/todo"-->
+<!--                    android:src="@drawable/openlink"-->
+<!--                    app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="1.0"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/projectName"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textView4"-->
+<!--                    app:layout_constraintVertical_bias="0.326"-->
+<!--                    card_view:ignore="MissingConstraints" />-->
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/grayColor"
                     app:layout_constraintTop_toBottomOf="@+id/textView"
-                    android:layout_marginTop="10dp"
                     card_view:ignore="MissingConstraints"
                     card_view:layout_editor_absoluteX="16dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/projectName1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/project_title1"
+                android:textColor="@color/blackColor"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto"
+                card_view:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="533dp"
+                android:layout_height="41dp"
                 android:layout_marginBottom="10dp"
 
                 >
-
-                <TextView
-                    android:id="@+id/projectName1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/project_title1"
-                    android:textColor="@color/blackColor"
-                    android:textSize="16sp"
-                    android:layout_marginStart="10dp"
-                    app:fontFamily="@font/roboto"
-                    app:layout_constraintStart_toStartOf="parent"
-                    card_view:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView1"
@@ -733,24 +727,12 @@
                     android:text="@string/project_description1"
                     android:textSize="14sp"
                     app:fontFamily="@font/roboto"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/projectName1"
-                    card_view:ignore="MissingConstraints" />
+                    card_view:ignore="MissingConstraints,NotSibling" />
 
-                <ImageView
-                    android:id="@+id/githubCopyLin1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
 
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/openlink"
-                    app:layout_constraintBottom_toTopOf="@+id/textView1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/projectName1"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.064"
-                    card_view:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

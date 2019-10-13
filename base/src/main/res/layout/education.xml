@@ -123,11 +123,11 @@
 
                 <ImageView
                     android:id="@+id/collegeImage"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginTop="5dp"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/pucitlogo"
+                    android:src="@drawable/pgc"
                     app:layout_constraintEnd_toStartOf="@+id/intermediate"
                     app:layout_constraintHorizontal_bias="0.000"
                     app:layout_constraintStart_toStartOf="parent"
